@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "startGanache": "ganache --fork",
+    "test": "truffle migrate --reset && node test/test.js",
+    "devTest": "concurrently \"npm run startGanache\" \"npm run test\""
+  },
+  "dependencies": {
+    "ethers": "^5.7.2"
+  },
+  "devDependencies": {
+    "concurrently": "^7.5.0",
+    "ganache": "^7.5.0",
+    "truffle": "^5.6.3"
+  }
+}
